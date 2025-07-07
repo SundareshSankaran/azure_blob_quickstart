@@ -1,5 +1,6 @@
 jupyter
 ipykernel
-dotenv
+python-dotenv
 azure-storage-blob
 azure-identity
+streamlit
