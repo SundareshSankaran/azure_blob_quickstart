@@ -1,0 +1,5 @@
+jupyter
+ipykernel
+dotenv
+azure-storage-blob
+azure-identity

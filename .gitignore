@@ -1,5 +1,5 @@
 .env
-build/
+build/*/
 __pycache__/
 *.parquet
 *.csv
