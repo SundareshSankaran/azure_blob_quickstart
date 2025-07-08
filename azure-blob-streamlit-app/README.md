@@ -55,10 +55,3 @@ Once the application is running, you can access it in your web browser at `http:
 - **Search Blobs:** Use wildcard patterns to search for specific blobs.
 - **Download Blobs:** Download a selected blob to your local machine.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
