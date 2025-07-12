@@ -28,6 +28,47 @@ AZURE_STORAGE_CONNECTION_STRING="<your key>"
 With some modification, you can also use the passwordless auth mechanism.  Refer [here](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python?tabs=managed-identity%2Croles-azure-portal%2Csign-in-azure-cli&pivots=blob-storage-quickstart-scratch).
 
 1. **Standalone Python Program:** Refer [block_quickstart.py](./blob_quickstart.py)
+
+Here are snippets for the operations you can perform:
+
+- List containers
+
+```bash
+python blob_quickstart.py list_containers
+```
+
+- List blobs in a container
+
+```bash
+python blob_quickstart.py list_blobs <container_name> 
+```
+
+- Search for a blob (based on a name pattern) in a container
+
+```bash
+python blob_quickstart.py search_blob <container_name> <search_term>
+```
+
+- Download a blob
+
+```bash
+python blob_quickstart.py download_blob <container_name> <blob_name> <download_path_on_client_machine>
+```
+
+- Upload a local file to a blob
+
+```bash
+python blob_quickstart.py upload_blob <container_name> <path_to_file_on_local_machine> <blob_name>
+```
+
+Or, optionally, if you omit the blob name, the local file name will be used instead.  
+
+```bash
+python blob_quickstart.py upload_blob <container_name> <path_to_file_on_local_machine> 
+```
+
+
+
 2. **Streamlit app:**
 
 ```bash
@@ -41,3 +82,6 @@ streamlit run src/app.py
 
 ## Contact
 - @SundareshSankaran ([email](mailto:sundaresh.sankaran@gmail.com))
+
+## Version 
+- Version 1.0 (see [Change Log](./CHANGELOG.md) for details)
