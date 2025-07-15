@@ -99,13 +99,17 @@ class BlobAccessClass:
 
     # Method to search and get a specific blob in a container
     def search_blob(self, search_term):
+        """
+        Search for blobs in the container that match the search term.
+        Returns a list of blobs that match the search term.
+        """
         try:
             print(f"Searching for blobs matching: {search_term}")
             all_blobs = self.container_client.list_blobs()
             self.search_results = []
             for blob in all_blobs:
                 if search_term in blob.name:
-                    self.search_results.append(blob)
+                    self.search_results.append(blob.name)
             return self.search_results
         except Exception as e:
             print(f"Error getting blob client: {e}")

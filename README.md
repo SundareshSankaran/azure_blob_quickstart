@@ -67,9 +67,11 @@ Or, optionally, if you omit the blob name, the local file name will be used inst
 python blob_quickstart.py upload_blob <container_name> <path_to_file_on_local_machine> 
 ```
 
+2. **Python Class**:  The [Python class defined here: blob_access_class.py](./blob_access_class.py) provides the same functionality as methods accessible from an instance of a BlobAccessClass.
 
+Refer this [example notebook](./tests/test_class.ipynb) for details on how to use.
 
-2. **Streamlit app:**
+3. **Streamlit app:**
 
 ```bash
 # Ensure you activate the virtual environment
@@ -84,4 +86,4 @@ streamlit run src/app.py
 - @SundareshSankaran ([email](mailto:sundaresh.sankaran@gmail.com))
 
 ## Version 
-- Version 1.0 (see [Change Log](./CHANGELOG.md) for details)
+- Version 0.1.0 (see [Change Log](./CHANGELOG.md) for details)
