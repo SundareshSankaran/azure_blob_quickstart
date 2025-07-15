@@ -3,7 +3,7 @@
 <mark> (Initial Version - more details soon)</mark>
 
 ## Overview
-This is am emergent application to help users browse and download the contents of an Azure storage account.
+This is an emergent application to help users browse and download the contents of an Azure storage account.
 Why?  Many applications, but the main motivation is to provide a convenient means of accessing Azure Blob storage and data from other applications, an example being SAS.
 
 # How to install
