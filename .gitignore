@@ -7,3 +7,4 @@ __pycache__/
 *.db
 *.gz
 .DS_Store
+.ipynb_checkpoints

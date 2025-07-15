@@ -44,9 +44,11 @@ print("Blob service client created successfully.")
 def list_containers(blob_service_client):
     try:
         containers = blob_service_client.list_containers()
+        container_list = []
         for container in containers:
             print(f"Container: {container.name}")
-        return containers
+            container_list.append(container.name)
+        return container_list
     except Exception as e:
         print(f"Error listing containers: {e}")
         raise
