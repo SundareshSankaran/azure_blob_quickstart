@@ -1,16 +1,16 @@
 # Azure Blob Storage Browser
 
-<mark> (In Progress)</mark>
+<mark> (Initial Version - more details soon)</mark>
 
 ## Overview
-This is the beginning of an application to help users browse and download the contents of an Azure storage account.
-Why?  Many applications, but specific to SAS, this provides convenience when reaching out to other applications which output to Azure Blob storage and such data is required by SAS.
+This is am emergent application to help users browse and download the contents of an Azure storage account.
+Why?  Many applications, but the main motivation is to provide a convenient means of accessing Azure Blob storage and data from other applications, an example being SAS.
 
 # How to install
 
-This [requirements.txt](./build/requirements.txt) file in the [build](./build/) directory provides a list of required packages (plus some conveniences) which you can either install in your Python environment, or through a virtual Python environment.
+This [requirements.txt](./build/requirements.txt) file in the [build](./build/) directory provides a list of required Python packages (plus some optional conveniences) which you can either install in your Python environment or a virtual Python environment.
 
-This [build.sh](./build/build.sh) shell script provides instructions on creating a virtual environment and installing the packages.
+This [build.sh](./build/build.sh) shell script provides instructions and commands to create a virtual environment and install packages.
 
 ```bash
 git clone https://github.com/SundareshSankaran/azure_blob_quickstart.git
@@ -20,7 +20,7 @@ cd build
 
 # Options to run
 
-**Prerequisite:** Check with your admin to ensure you have appropriate permissions to perform desired operations on this account.  Obtain an access key and save it in a .env file in your *local* repo folder.  Take care to protect your key.
+**Prerequisite:** Check with your Azure Storage Account admin to ensure you have appropriate permissions to perform desired operations on an account.  Obtain an access key and save it in a .env file in your *local* repo folder.  Take care to protect your key.
 
 ```
 AZURE_STORAGE_CONNECTION_STRING="<your key>"
@@ -67,9 +67,7 @@ Or, optionally, if you omit the blob name, the local file name will be used inst
 python blob_quickstart.py upload_blob <container_name> <path_to_file_on_local_machine> 
 ```
 
-2. **Python Class**:  The [Python class defined here: blob_access_class.py](./blob_access_class.py) provides the same functionality as methods accessible from an instance of a BlobAccessClass.
-
-Refer this [example notebook](./tests/test_class.ipynb) for details on how to use.
+2. **Python Class**:  The [Python class defined here: blob_access_class.py](./blob_access_class.py) provides the same functionality as methods accessible from an instance of a BlobAccessClass. Refer this [example notebook](./tests/test_class.ipynb) for details on how to use.
 
 3. **Streamlit app:**
 
