@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 0.1.0 (28JUL2025)
+- Added example for SAS using SAS/Access Interface to DuckDB
+
+
 ## Version 0.1.0 (15JUL2025)
 - Initial version with following operations:
     - List containers

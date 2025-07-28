@@ -79,9 +79,13 @@ cd azure-blob-streamlit-app
 streamlit run src/app.py
 
 ```
+4. **For SAS users:**
+In addition to the Python-based interfaces mentioned above, also check out this [folder](./sas/) for an example of how to use the SAS/Access Interface to DuckDB (available in Viya 2025.07 onwards) to read from Azure blob storage.
+
+
 
 ## Contact
 - @SundareshSankaran ([email](mailto:sundaresh.sankaran@gmail.com))
 
 ## Version 
-- Version 0.1.0 (see [Change Log](./CHANGELOG.md) for details)
+- Version 0.2.0 (see [Change Log](./CHANGELOG.md) for details)
