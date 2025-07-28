@@ -19,7 +19,7 @@ filename resp temp;
 proc http
   method=GET
   out=resp
-  url="https://viya.ext-post-aks.unx.sas.com/credentials/domains/AzureBlobConStringAuth/secrets"
+  url="https://<your-viya-server>/credentials/domains/AzureBlobConStringAuth/secrets"
   oauth_bearer = sas_services;
  headers
   "Accept"="application/vnd.sas.credential+json";
